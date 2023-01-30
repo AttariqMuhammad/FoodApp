@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet, Pressable, Platform } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
-function CategoryItem({ children, color }) {
+function CategoryItem({ children, color, onPress }) {
   function pressHandler() {
-    console.log("press");
+    onPress;
   }
 
   return (
@@ -14,7 +14,7 @@ function CategoryItem({ children, color }) {
           pressed ? styles.buttonPressed : null,
         ]}
         android_ripple={{ color: "#ccc" }}
-        onPress={pressHandler}
+        onPress={onPress}
       >
         <View style={[styles.innerContainer, { backgroundColor: color }]}>
           <Text style={styles.title}>{children}</Text>

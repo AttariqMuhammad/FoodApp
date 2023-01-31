@@ -3,12 +3,12 @@ import { StatusBar } from "expo-status-bar";
 
 import { CATEGORIES } from "../data/dummy-data";
 
-import CategoryItem from "../data/components/CategoryItem";
+import CategoryItem from "../components/CategoryItem";
 
 function CategoriesScreen({ navigation }) {
   function renderCategoryItem({ item }) {
     function pressHandler() {
-      navigation.navigate("MealsOverview");
+      navigation.navigate("MealsOverview", { categoryId: item.id });
     }
 
     return (

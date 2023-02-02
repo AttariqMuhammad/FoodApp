@@ -38,13 +38,17 @@ function MealDetail({
           <View>
             <Text style={styles.textBold}>Ingredients :</Text>
             {ingredients.map((ingredient) => (
-              <Text style={styles.text}>- {ingredient}</Text>
+              <Text key={ingredient} style={styles.text}>
+                - {ingredient}
+              </Text>
             ))}
           </View>
           <View>
             <Text style={styles.textBold}>Steps :</Text>
             {steps.map((step) => (
-              <Text style={styles.text}>- {step}</Text>
+              <Text key={step} style={styles.text}>
+                - {step}
+              </Text>
             ))}
           </View>
         </View>

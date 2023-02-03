@@ -30,10 +30,6 @@ function MealDetail({
             <Text style={styles.text}>- {affordability}</Text>
             <Text style={styles.text}>- {complexity}</Text>
             <Text style={styles.text}>- {duration} minutes</Text>
-            {/* <Text style={styles.text}>- {isGlutenFree}</Text>
-            <Text style={styles.text}>- {isVegan}</Text>
-            <Text style={styles.text}>- {isVegetarian}</Text>
-            <Text style={styles.text}>- {isLactoseFree}</Text> */}
           </View>
           <View>
             <Text style={styles.textBold}>Ingredients :</Text>
